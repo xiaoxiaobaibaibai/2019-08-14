@@ -1,0 +1,22 @@
+.mybox {
+    width: 80px;
+    padding: 5px;
+    border: 5px solid;
+    margin: 10px;
+
+}
+
+/*box-sizing:content-box;
+ box-sizing:border-box; width和height属性将会包括内边距和边框，外边距仍然会影响盒子在页面中占据整体空间，
+ 他的宽度不会算到width； IE6及更早版本IE*/
+
+<section>
+ some text
+ <p>Some more text</p>
+</section>
+
+.mybox {
+    position: relative;
+    left:20px;
+    top:20px;
+}

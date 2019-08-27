@@ -1,0 +1,116 @@
+.overlay{
+    background: #000;
+    background: rgba(0,0,0,0.8);/*   alpha 0.8 透明度 */
+};
+
+.mything{
+    -webkit-transform: translate(0,10px); /* -webkit 支持Safari.Chrome,Opera(blink引擎);*/
+    -moz-transform: translate(0,10px); /*基于Mozalia的浏览器。Firefox；*/
+    -ms-transform: translate(0,10px);/*基于微软的 IE;*/
+    transform: translate(0,10px);
+};
+
+@supports(display: grid){
+    /*lalala*/
+}
+    
+/* 类型选择符（元选择符） */
+p {
+    color: antiquewhite;
+}
+/* 后代选择符 */
+blockquote p {
+    padding-left: 2em;
+}
+/*ID选择符（#），类选择符（.）;*/
+#intro{
+    font-weight: bold;/*粗体*/
+}
+.date-posted{
+    color: antiquewhite;
+}
+/* <p id = "intro">Hello Andy!</p>
+<p class = "data-posted">2019/08/14</p> */
+
+#lasted h1{
+    font-size: 1.8em;
+
+}
+/*子选择符* 一个元素的直接后代*/
+
+#nav > li {
+    background:url(folder.png) no-repeat left top;
+    padding-left: 20px;
+}
+/*相邻同辈选择符  某个元素后面，并与该元素拥有共同父元素的元素*/
+h2 + p {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: antiquewhite;
+}
+
+/*一般同辈组合字* h2之后所有段落*/
+h2 ~ p{
+    font-size: 1.4em;
+    font-weight: bold;
+    color: aqua;
+}
+
+/*通用选择符*/
+* {
+    padding: 0;
+    margin: 0;
+}
+.product-section > * {
+
+}
+input[type="submit"] {
+     cursor: pointer;  /*手状光环 */
+}
+
+a[href^= "http:"] /*开头*/
+img[src$=".jpg"] /*结尾*/
+a[href*= "/about/"] /*包含*/
+a[rel~=next] /*以空格分隔的属性值*/
+a[lang|=en]/*开头是指定值或者指定值加-*/
+
+伪元素
+
+::first-letter
+::first-line
+::before
+::after /*适合插入小图标或者版面装饰符号*/
+
+/*伪类*/
+a:link{
+    color: blue;
+}
+a:visited{
+    color: green;
+
+}
+a:hover,
+a:focus{
+    color: red;
+}
+
+a:active{
+    color: aliceblue;
+}
+
+.comment:target:not(.comment-downvoted){
+    background-color: aqua;
+}
+
+tr:nth-child(odd){
+    background: yellowgreen; /*交替的给表格行应用样式；*/
+}
+tr:nth-last-child(n+3){
+    background: #000;
+}
+
+p{ 
+    font-size: 1.5em !important
+}
+Lord Vader Hates Furry Animals
+:link :visited :hover :focus :active
