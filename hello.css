@@ -48,7 +48,6 @@ h2 + p {
     font-weight: bold;
     color: antiquewhite;
 }
-
 /*一般同辈组合字* h2之后所有段落*/
 h2 ~ p{
     font-size: 1.4em;

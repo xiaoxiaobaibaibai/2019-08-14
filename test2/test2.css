@@ -1,0 +1,18 @@
+/* body {
+    background-color: rgba(186, 218, 85, 0.5); 1，完全不透明，0，完全透明
+    background-color: #bada55;
+    background-color: rgb(186, 218, 85);
+    background-color: hsl(74, 64% 59%);
+    /* background: #bada55; 一次性设置与背景相关的多个属性，可能会意外覆盖前面已经设置的值 */
+    /* opacity: 0.5; 整个元素变透明，将无法再让其子元素变得不那么透明
+}  */
+
+.profile-box {
+    width: 100%;
+    height: 600px;
+    background-color: #93b5cf;
+    background-image: url(../img/故宫.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
